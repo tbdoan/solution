@@ -1,4 +1,9 @@
- public static String encrypt(String input) {
+class Main {
+  public static void main(String[] args) {
+    System.out.println(encrypt("chillout"));
+  }
+
+  public static String encrypt(String input) {
     String output = "";
     input = input.replaceAll(" ", "");
     int upperdim = (int) Math.ceil(Math.sqrt(input.length())); 
@@ -17,3 +22,4 @@
     }
     return output;
   }
+}
